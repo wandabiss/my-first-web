@@ -1,0 +1,79 @@
+/* Quita el margen y el relleno predeterminado del body*/
+*{
+    padding: 0px;
+    margin: 0px;
+}
+/* Titulos*/
+h3,h1 {
+    padding: 1rem;
+}
+/* Posicion fija arriba de todo*/
+.header{
+    background-color: rgba(32, 28, 32, 0.884);
+    padding: 2rem 0;
+    width: 100%;
+
+    position: fixed;
+    left: 0;
+    right: 0;
+    top:0;   
+}
+/* Aplica a todos los enlaces (a) dentro de la clase header son blancos y no tienen el subrayado predeterminado de los links */
+.header a {
+    text-decoration: none;
+    color: white;
+}
+/* Colocar el logo de la nav por un lado, y los elementos de la lista por otro lado. Cuando no hay espacio para que un elemento esté al lado del otro, con la propiedad wrap se acomodan abajo sin forzar */
+.logo-nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap:wrap;
+}
+/* A todos los elementos ul que están dentro de la clase navegacion les quito el margen y el relleno */
+.navegacion ul {
+    margin: 0;
+    padding: 0;
+}
+/* Se muestren como elementos inline-block => uno al lado del otro*/
+.navegacion ul li {
+    display: inline-block;
+}
+/* Se muestran los enlaces (a) como elementos de bloque*/
+.navegacion ul li a{
+    display: block;
+    padding: 1rem 1rem;
+}
+/* A todos los elementos de enlace (a), que testan dentro de la lista (li) les agregamos un hover => cuando pasamos el mouse por encima entonces cambia el color. Le agregué un efecto de transición y un borde redondeado */
+.navegacion ul li a:hover{
+    background-color: rgb(248, 150, 166);
+    transition: all 0.5s linear;
+    border-radius: 5px;
+}
+/* El espacio entre las letras del logo y su tamaño*/
+.logo {
+    letter-spacing: 10px;
+    font-size: 15px;
+}
+/* El main tiene un ancho del 85% de la pantalla, y es flexible */
+main{
+    padding: 10rem 2rem;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Quité el estilo de item que viene predeterminado con las listas */ 
+ul li{
+    list-style: none;
+}
+/* Los estilos se van a aplicar solo cuando la pantalla tenga => máximo 767px */
+@media only screen and (max-width: 767px){
+    .navegacion{
+        width: 100%;
+        margin: 1rem;
+    }
+    .navegacion ul li {
+        display: block;
+    }
+}
