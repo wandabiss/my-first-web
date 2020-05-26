@@ -3,14 +3,26 @@
     padding: 0px;
     margin: 0px;
 }
+/* Google Font para los titulos*/
+h1{
+    font-family: 'Bungee Shade', cursive;
+    font-size: 4rem;
+}
+h2, h3, li{
+    font-family: 'Roboto', sans-serif;
+}
+
 /* Titulos*/
 h3,h1 {
     padding: 1rem;
 }
+p, main > ul > li {
+    font-family:  sans-serif; 
+}
+
 /* Posicion fija arriba de todo*/
 .header{
-    background-color: rgba(32, 28, 32, 0.884);
-    padding: 2rem 0;
+    background-color: rgba(5, 4, 5, 0.884);
     width: 100%;
 
     position: fixed;
@@ -42,30 +54,46 @@ h3,h1 {
 /* Se muestran los enlaces (a) como elementos de bloque*/
 .navegacion ul li a{
     display: block;
-    padding: 1rem 1rem;
+    padding: 1.5rem 1.5rem;
 }
 /* A todos los elementos de enlace (a), que testan dentro de la lista (li) les agregamos un hover => cuando pasamos el mouse por encima entonces cambia el color. Le agregué un efecto de transición y un borde redondeado */
 .navegacion ul li a:hover{
     background-color: rgb(248, 150, 166);
     transition: all 0.5s linear;
-    border-radius: 5px;
+    border-radius: 50px;
 }
 /* El espacio entre las letras del logo y su tamaño*/
 .logo {
-    letter-spacing: 10px;
-    font-size: 15px;
+    width: 120px;
+    padding-left: 1rem;
 }
 /* El main tiene un ancho del 85% de la pantalla, y es flexible */
-main{
+.main-container{
     padding: 10rem 2rem;
     height: 85%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+}
+.card-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+/* Las tarjetas que contienen el avance de los Challenges diarios */ 
+.card{
+    padding: 2rem;
+    margin: 1rem;
 }
 /* Quité el estilo de item que viene predeterminado con las listas */ 
 ul li{
     list-style: none;
+}
+
+#menu-burger{
+    display: none;
 }
 /* Los estilos se van a aplicar solo cuando la pantalla tenga => máximo 767px */
 @media only screen and (max-width: 767px){
@@ -75,5 +103,35 @@ ul li{
     }
     .navegacion ul li {
         display: block;
+    }
+/* Cuando los elementos no tienen suficiente espacio se posicionan uno abajo del otro */
+    .card-container{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+/* Estilo del menu hamburguesa, para dispotivos moviles */
+    #menu-burger{
+        display: block;
+        cursor: pointer;
+        padding: 2rem;
+        color: white;
+    }
+    /* Cuando el elemento de navegacion tiene la clase show, entonces el menu se muestra */
+    .navegacion ul.show{
+        display: block;
+    }
+    /* Si le quitamos la clase 'show' el menú, no se muestra */
+    .navegacion ul{
+        display: none;
+    }
+    /* Quito los margenes de los items de la lista para que no se vean tan separado */
+    .navegacion ul li a{
+        padding:1rem;
+    }
+    .navegacion{
+        margin:0;
+    }
+    h1{
+        font-size: 2rem;
     }
 }

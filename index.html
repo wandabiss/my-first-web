@@ -5,11 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi primera Web</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Hanuman&family=Major+Mono+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 </head>
 <body>
     <header class="header">
-        <div class="container logo-nav-container">
-            <a href="#" class= "logo">WANDA</a>
+        <div class="logo-nav-container">
+             <a href=""><img class= "logo" src="img/Logo - miprimeraweb.png" alt="Web"></a> 
+             <span class="fas fa-hamburger" id="menu-burger">
+             </span>
             <nav class="navegacion">
                 <ul>
                     <li><a href="#">Inicio</a></li>
@@ -22,19 +27,48 @@
         </div>
     </header>
     <main>
-        <h1>Hola Mundo!</h1>
-        <p>Estoy súper entusiasmada con estas letritas mágicas</p>
-        <p>Aprendí a crear un menú de Navegación con HTML y CSS (Flexbox)</p>
-        <p>Tiempo destinado: 3hrs</p>
-        <h3>Próximas Actualizaciones</h3>
-        <ul>
-            <li><input type="checkbox" name="" id=""> Agregar una imagen de logo</li>
-            <li><input type="checkbox" name="" id=""> Adaptar la barra de navegación a mobile</li>
-            <li><input type="checkbox" name="" id=""> Agregar secciones y contenido</li>
-            <li><input type="checkbox" name="" id=""> Agregar fuentes externas de GoogleFonts</li>
-            <li><input type="checkbox" name="" id=""> Modificar los colores y diseño</li>
-            <li><input type="checkbox" name="" id=""> Tenerme mucha paciencia y registrar los avances</li>
-        </ul>
+        <div class="main-container">
+            <h1>Hola Mundo!</h1>
+            <div class="card-container">
+                <div class="card">
+                    <h2>Challenge HTML Dia I</h2>
+                    <p>Tiempo destinado: 3hrs</p> <br>
+                    <p>Estoy súper entusiasmada con estas hermosas letritas mágicas.Hoy aprendí a crear un menú de Navegación con HTML y CSS. Repasé la estructura básica del html y las distintas formas de crear un nav. Vi varios tutoriales sobre Flexbox</p>
+                    <h3>Próximas Actualizaciones</h3>
+                    <ul>
+                        <li><input type="checkbox" name="" id=""> Agregar una imagen de logo</li>
+                        <li><input type="checkbox" name="" id=""> Adaptar la barra de navegación a mobile</li>
+                        <li><input type="checkbox" name="" id=""> Agregar secciones y contenido</li>
+                        <li><input type="checkbox" name="" id=""> Agregar fuentes externas de GoogleFonts</li>
+                        <li><input type="checkbox" name="" id=""> Modificar los colores y diseño</li>
+                        <li><input type="checkbox" name="" id=""> Tenerme mucha paciencia y registrar los avances</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h2>Challenge HTML Dia II</h2>
+                    <p>Tiempo destinado: 3hrs</p> <br>
+                    <p>Terminé el nav, agregué una función con jquery para que se oculte en la vista mobile.Haciendo un click en el icono de menu se despliega nuevamente. Enlacé el archivo script.js en el index. Y modifiqué con Flexbox algunos aspectos de la página. Aprendí a usar media queries para adaptar el nav en tamaños pequeños de pantalla, integré GoogleFonts y FontAwesome y coloqué el logo con link en formato png. </p>
+                    <h3>Próximas Actualizaciones</h3>
+                    <ul>
+                        <li><input type="checkbox" name="" id=""> Agregar un footer</li>
+                        <li><input type="checkbox" name="" id=""> Agregar un formulario</li>
+                        <li><input type="checkbox" name="" id=""> Aprender sobre CSS Grid</li>
+                        <li><input type="checkbox" name="" id=""> Registrar distintas propiedades de estilos en CSS</li>
+                        <li><input type="checkbox" name="" id=""> Incoporar fotos en la página</li>
+                        <li><input type="checkbox" name="" id=""> Tenerme mucha paciencia y registrar los avances</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h2>Challenge HTML Dia III</h2>
+                    <p>Tiempo destinado: 2hrs</p> <br>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum exercitationem iusto laborum itaque quibusdam dicta reiciendis maiores, inventore non placeat repudiandae rem suscipit debitis voluptates, obcaecati sint aut nemo temporibus?</p>
+                    <h3>Nuevas adquisiciones</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dolor voluptate natus deserunt quis sit voluptatum, labore quae amet, vero odio eum alias atque nemo quod sapiente! Tenetur, dicta repellat?</p>
+                </div>
+            </div>
+        </div>
     </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
