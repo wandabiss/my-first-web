@@ -8,6 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Hanuman&family=Major+Mono+Display&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 </head>
 <body>
     <header class="header">
@@ -28,7 +30,7 @@
     </header>
     <main>
         <div class="main-container">
-            <h1>Hola Mundo!</h1>
+            <h1 class="ml2"> Hola Mundo!</h1> <!--Clase para que funcione la animacion 'm12' no tiene style Reemplazar por una funcion de javascript - sin usar librerias-->
             <div class="card-container">
                 <div class="card">
                     <h2>Challenge HTML Dia I</h2>
@@ -60,15 +62,32 @@
                 </div>
                 <div class="card">
                     <h2>Challenge HTML Dia III</h2>
-                    <p>Tiempo destinado: 2hrs</p> <br>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum exercitationem iusto laborum itaque quibusdam dicta reiciendis maiores, inventore non placeat repudiandae rem suscipit debitis voluptates, obcaecati sint aut nemo temporibus?</p>
-                    <h3>Nuevas adquisiciones</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dolor voluptate natus deserunt quis sit voluptatum, labore quae amet, vero odio eum alias atque nemo quod sapiente! Tenetur, dicta repellat?</p>
+                    <p>Tiempo destinado: 1hrs</p> <br>
+                    <p>Hoy hice de todo tipo de actividades, vi tutoriales sobre Grid, y algunas propiedades de CSS. Encontré muy divertido jugar a la interactvidad con jQuery, tomando y agregando clases. Incluso agregué una animación de una libreria con el fin de entender un poco como se codifica. Vi algunos repsositorios en GitHub sobre el tema y leí mucho código.Agregué el footer.</p>
+                    <h3>Próximas Actualizaciones</h3>
+                    <ul>
+                        <li><input type="checkbox" name="" id=""> Agregar un formulario</li>
+                        <li><input type="checkbox" name="" id=""> Incoporar fotos en la página</li>
+                        <li><input type="checkbox" name="" id=""> Pensar funciones en Javascript que oculten y hagan aparecer elementos</li>
+                        <li><input type="checkbox" name="" id=""> Aprender más sobre animaciones e intentar reemplazar la animacion de la libreria</li>
+                        <li><input type="checkbox" name="" id=""> Investigar sonbre el bug de la barra => Despues de incorporar la animacion de la libreria, el nav queda oculto hasta que le paso el mouse, no carga al principio</li>
+                        <li><input type="checkbox" name="" id=""> Tenerme mucha paciencia y registrar los avances</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </main>
+    <footer>
+        <div class="section-footer-container">
+            <h4> Si necesitás ayuda de cualquier tipo <br> ponete en contacto conmigo </h4>
+        <p> Pagina Web de pruebita -<br> Escrita en su mayoria por Wanda Biss</p>            
+        </div>
+        <div class="iconos-container">
+            <i class="fab fa-github"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-behance"></i>
+        </div>
+    </footer>
 
-    <script src="script.js"></script>
 </body>
 </html>
