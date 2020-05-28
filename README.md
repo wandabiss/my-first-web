@@ -12,3 +12,5 @@ Finish building the navigation bar. It is adaptable and functional on mobile dev
 *Challenge Web - Day III*
 
 I played and had fun with animations and CSS. I explored the jQuery and Javascript animation libraries. I saw tutorials of data structuring. Add a footer and use flexbox.
+
+*Challenge Web - Day IV*
