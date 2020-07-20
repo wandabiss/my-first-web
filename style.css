@@ -92,6 +92,7 @@ p, main > ul > li {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: nowrap;
+    width: 100vw;
 }
 /* Las tarjetas que contienen el avance de los Challenges diarios */ 
 .card{
@@ -158,6 +159,9 @@ flex-direction: column;
         flex-wrap: wrap;
         justify-content: center;
     }
+    .card{
+        width: 80%;
+    }
 /* Estilo del menu hamburguesa, para dispotivos moviles */
     #menu-burger{
         display: block;
@@ -182,6 +186,9 @@ flex-direction: column;
     }
     h1{
         font-size: 2rem;
+    }
+    #img-mujer{
+        padding: 0px;
     }
     .iconos-container{
         width: 30vw;
